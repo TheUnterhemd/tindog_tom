@@ -1,0 +1,29 @@
+{
+  "name": "tindog_tom",
+  "version": "1.0.0",
+  "description": "toms doglove",
+  "main": "index.js",
+  "scripts": {
+    "start": "rm -rf dev-serve && parcel index.html --dist-dir dev-serve",
+    "build": "rm -rf build && parcel build index.html --dist-dir build --public-url ./",
+    "publish": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheUnterhemd/tindog_tom.git"
+  },
+  "author": "tom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheUnterhemd/tindog_tom/issues"
+  },
+  "homepage": "https://github.com/TheUnterhemd/tindog_tom#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "parcel": "^2.7.0",
+    "sass": "^1.54.9"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0"
+  }
+}
